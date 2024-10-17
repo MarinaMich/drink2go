@@ -150,7 +150,98 @@
         <span class="catalog__badge">Каталог</span>
         <h2>Каталог кофейных напитков</h2>
         <div class="catalog__wrapper">
-          <form class="catalog__form" action=""></form>
+          <form class="catalog__form form" action="https://echo.htmlacademy.ru/">
+            <fieldset class="form__price">
+              <legend class="form__title">Цена</legend>
+              <div class="form__range range">
+                <div class="range__scale">
+                  <input class="range__value" type="number" step="any" name="range" value="">
+                  <div class="range__slider"></div>
+                </div>
+                <div class="form__range-inputs">
+                  <input class="range-input" type="number" value="0" name="min-price">
+                  <input class="range-input" type="number" value="900" name="max-price">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__filter-group">
+              <legend class="form__title">Наличие молока</legend>
+              <ul class="form__filter-list">
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="radio" name="type-milk" value="no-matter">
+                    <span class="control__radio"></span>
+                    <span class="control__label">Неважно</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="radio" name="type-milk" value="animal">
+                    <span class="control__radio"></span>
+                    <span class="control__label">Только животное</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="radio" name="type-milk" value="vegetable">
+                    <span class="control__radio"></span>
+                    <span class="control__label">Только растительное</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="radio" name="type-milk" value="without">
+                    <span class="control__radio"></span>
+                    <span class="control__label">Без молока</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__filter-group">
+              <legend class="form__title">Страна произрастания</legend>
+              <ul class="form__filter-list">
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="Brazil">
+                    <span class="control__toggle"></span>
+                    <span class="control__label">Бразилия</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="Ethiopia">
+                    <span class="control__toggle"></span>
+                    <span class="control__label">Эфиопия</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="Colombia">
+                    <span class="control__toggle"></span>
+                    <span class="control__label">Колумбия</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="Costa Rica">
+                    <span class="control__toggle"></span>
+                    <span class="control__label">Коста-Рика</span>
+                  </label>
+                </li>
+                <li class="form__filter-item">
+                  <label class="form__control control">
+                    <input class="control__input visually-hidden" type="checkbox" name="Peru">
+                    <span class="control__toggle"></span>
+                    <span class="control__label">Перу</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <div class="form__wrap-button">
+              <button class="form__button button" type="submit">Применить</button>
+              <button class="form__button button button--light" type="reset">Сбросить</button>
+            </div>
+          </form>
           <div class="catalog__products products">
             <select class="products__sorting" aria-label="Сортировка">
               <option value="default">по умолчанию</option>
