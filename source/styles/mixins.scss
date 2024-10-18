@@ -1,0 +1,16 @@
+@mixin list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin link-edit {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin fieldset-edit {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
