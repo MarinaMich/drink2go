@@ -1,0 +1,88 @@
+.menu {
+  position: relative;
+  min-width: 60px;
+}
+
+.menu__list {
+  @include list-reset;
+
+  @media (max-width: $mobile-width-max) {
+    position: absolute;
+    background-color: $white;
+    width: 320px;
+    right: 0;
+    top: 60px;
+  }
+}
+
+.menu__toggle {
+  position: absolute;
+  top:0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background-color: $white;
+  cursor: pointer;
+  border: none;
+}
+
+.menu--closed .menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 22px;
+  width: 16px;
+  height: 2px;
+  background-color: $black;
+  box-shadow:
+    0 5px 0 0 $black,
+    0 10px 0 0 $black;
+}
+
+.menu--closed .menu__toggle:active {
+  background-color: $base_secondary;
+}
+.menu--closed .menu__toggle:hover{
+  opacity: 0.8;
+}
+
+.menu--opened .menu__toggle{
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 20px;
+    height: 1.5px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $base_primary;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .menu--closed .menu__list {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu__toggle {
+    display: none;
+  }
+}

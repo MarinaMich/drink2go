@@ -8,5 +8,11 @@
 
 .header__wrapper{
   display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
+  @media (max-width: 768px){
+    justify-content: space-between;
+  }
 }
+
