@@ -1,0 +1,1 @@
+var e=document.querySelector(".menu"),s=document.querySelector(".menu__toggle");s.addEventListener("click",function(){console.log("\u043A\u043B\u0438\u043A"),e.classList.contains("menu--closed")?(e.classList.remove("menu--closed"),e.classList.add("menu--opened")):(e.classList.add("menu--closed"),e.classList.remove("menu--opened"))});
