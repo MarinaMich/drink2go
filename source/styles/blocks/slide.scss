@@ -1,3 +1,7 @@
+.slide {
+  //background-color: $flat_white;
+}
+
 .slide__img {
   @media (min-width: $tablet-width) {
     width: 476px;
@@ -8,4 +12,53 @@
     width: 600px;
     height: 600px;
   }
+}
+
+.slide__badge {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $base_primary;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.slide__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.slide__text {
+  margin: 0 20px;
+  margin-bottom: 20px;
+}
+
+.slide__buy {
+  text-align: left;
+  margin: 0 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.slide__old-price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: $base_primary;
+  text-decoration: line-through;
+}
+
+.slide__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-right: 20px;
+}
+
+.slide__button {
+  width: 110px;
+  height: 40px;
 }
