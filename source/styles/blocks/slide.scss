@@ -1,8 +1,11 @@
 .slide {
-  //background-color: $flat_white;
+  min-width: 100%;
+  box-sizing: border-box;
 }
 
 .slide__img {
+  object-fit: cover;
+
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
