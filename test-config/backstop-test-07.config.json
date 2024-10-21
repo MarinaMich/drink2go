@@ -1,0 +1,392 @@
+{
+  "id": "drink2go test-07",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "onReadyScript": "onReady.js",
+  "scenarios": [
+    {
+      "label": "index header TEST-07. 1 hover",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Главная",
+      "section": "header",
+      "hoverSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 1 active",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Главная",
+      "section": "header",
+      "activeSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 1 focus",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Главная",
+      "section": "header",
+      "focusSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 1 disable",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Главная",
+      "section": "header",
+      "disableSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 2 hover",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Доставка",
+      "section": "header",
+      "hoverSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 2 active",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Доставка",
+      "section": "header",
+      "activeSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 2 focus",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Доставка",
+      "section": "header",
+      "focusSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 2 disable",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Доставка",
+      "section": "header",
+      "disableSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 3 hover",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Войти",
+      "section": "header",
+      "hoverSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 3 active",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Войти",
+      "section": "header",
+      "activeSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 3 focus",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Войти",
+      "section": "header",
+      "focusSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 3 disable",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Войти",
+      "section": "header",
+      "disableSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 4 hover",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Корзина",
+      "section": "header",
+      "hoverSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 4 active",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Корзина",
+      "section": "header",
+      "activeSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 4 focus",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Корзина",
+      "section": "header",
+      "focusSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index header TEST-07. 4 disable",
+      "viewports": [
+        {
+          "label": "desktop",
+          "width": 1440,
+          "height": 800
+        }
+      ],
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Корзина",
+      "section": "header",
+      "disableSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index hero TEST-07. 5 hover",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Заказать",
+      "section": "hero",
+      "hoverSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index hero TEST-07. 5 active",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Заказать",
+      "section": "hero",
+      "activeSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index hero TEST-07. 5 focus",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Заказать",
+      "section": "hero",
+      "focusSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index hero TEST-07. 5 disable",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": "Заказать",
+      "section": "hero",
+      "disableSelector": "*",
+      "onReadyScript": "interaction.js",
+      "postInteractionWait": 500,
+      "misMatchThreshold": 5
+    }
+  ],
+  "fileNameTemplate": "{configId}_{scenarioLabel}_{viewportLabel}",
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference/test-07",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "engine_scripts",
+    "html_report": "backstop_data/html_report"
+  },
+  "report": [
+    "browser"
+  ],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": [
+      "--no-sandbox"
+    ],
+    "gotoParameters": {
+      "waitUntil": [
+        "load",
+        "networkidle0"
+      ],
+      "timeout": 20000
+    }
+  },
+  "asyncCaptureLimit": 10,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

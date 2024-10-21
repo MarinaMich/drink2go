@@ -22,7 +22,12 @@
   }
 }
 
+.slide__description {
+  padding-top: 2px;
+}
+
 .slide__badge {
+  display: inline-block;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
@@ -41,7 +46,7 @@
 
 .slide__text {
   margin: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .slide__buy {
@@ -49,6 +54,7 @@
   margin: 0 20px;
   padding-left: 25px;
   padding-right: 25px;
+  padding-top: 2px;
 }
 
 .slide__old-price {
@@ -57,6 +63,7 @@
   line-height: 32px;
   color: $base_primary;
   text-decoration: line-through;
+  margin-right: 2px;
 }
 
 .slide__price {
@@ -67,6 +74,9 @@
 }
 
 .slide__button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   width: 110px;
   height: 40px;
 }
@@ -91,11 +101,16 @@
     font-weight: 400;
     line-height: 32px;
     text-align: center;
+    margin: 0 80px 18px;
   }
 
   .slide__buy {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     text-align: center;
+  }
+
+  .slide__price {
+    margin-right: 17px;
   }
 
   .slide__button {
@@ -106,7 +121,7 @@
 
 @media (min-width: $desktop-width) {
   .slide {
-    padding-left: 80px;
+    padding-left: 95px;
     padding-right: 80px;
   }
 
@@ -118,10 +133,10 @@
   .slide__description {
     grid-column: 2/3;
     grid-row: 1/2;
-    padding-left: 0;
+    padding-left: 22px;
     padding-right: 0;
     width: 625px;
-    margin-top: 180px;
+    margin-top: 145px;
     text-align: left;
   }
 

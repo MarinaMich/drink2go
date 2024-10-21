@@ -20,6 +20,8 @@
     display: flex;
     column-gap: 60px;
     justify-content: space-between;
+    min-width: 580px;
+    margin-right: 20px;
   }
 }
 @media (min-width: $desktop-width){
