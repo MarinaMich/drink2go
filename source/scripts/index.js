@@ -19,30 +19,46 @@ const slides = Array.from(slider.querySelectorAll('.slide'));
 const count = slides.length;
 const nextButton = document.querySelector('.slider__control--next');
 const prevButton = document.querySelector('.slider__control--prev');
+const paginationButtons = document.querySelectorAll('.pagination__button');
 let currentIndex = 0;
 
 const slide = () => {
   slider.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
+const thisSlide = (index) => {
+  paginationButtons.forEach(item => item.classList.remove('pagination__button--current'));
+  paginationButtons[index].classList.add('pagination__button--current');
+}
+
 prevButton.addEventListener('click', () => {
   if (currentIndex > 0){
+    nextButton.disabled = false;
     currentIndex = (currentIndex - 1 + count) % count;
   } else {
     prevButton.disabled = true;
-    nextButton.disabled = false;
   }
   slide();
+  thisSlide(currentIndex);
 });
 
 nextButton.addEventListener('click', () => {
   if (currentIndex < count - 1) {
+    prevButton.disabled = false;
     currentIndex = (currentIndex + 1) % count;
   } else {
     nextButton.disabled = true;
-    prevButton.disabled = false;
   }
   slide();
+  thisSlide(currentIndex);
+});
+
+paginationButtons.forEach((button, index) => {
+  button.addEventListener('click', () =>{
+    currentIndex = index;
+    slide();
+    thisSlide(currentIndex);
+  })
 });
 
 window.addEventListener('load', () => {

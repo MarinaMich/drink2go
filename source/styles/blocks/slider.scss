@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 714px;
+    padding-top: 20px;
   }
 }
 
@@ -88,7 +89,7 @@
   }
 
   &:disabled {
-    &::before {
+    &::after {
       background-image: url("../../icons/vector_slider_disabled.svg");
       transform: scaleX(-1);
     }
@@ -112,5 +113,23 @@
 
   .slider__control--next::after {
     right: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__control {
+    width: 80px;
+    height: 100%;
+    top: 357px;
+  }
+
+  .slider__pagination {
+    @include list-reset;
+    display: flex;
+    column-gap: 8px;
+    position: absolute;
+    left: 43%;
+    bottom: 11%;
+    margin: 0;
   }
 }

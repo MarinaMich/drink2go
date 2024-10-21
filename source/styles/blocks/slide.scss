@@ -105,13 +105,36 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slide {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
   .slide__picture{
     grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   .slide__description {
     grid-column: 2/3;
+    grid-row: 1/2;
     padding-left: 0;
     padding-right: 0;
+    width: 625px;
+    margin-top: 180px;
+    text-align: left;
+  }
+
+  .slide__text {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .slide__buy {
+    text-align: left;
+    margin: 0;
+    padding: 0;
   }
 }

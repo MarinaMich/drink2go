@@ -1,0 +1,20 @@
+.pagination__button {
+  width: 62px;
+  height: 4px;
+  background-color: $white;
+  padding: 0;
+  border: none;
+
+  &:hover {
+    background-color: rgba(120, 89, 207, 0.25);
+    ;
+  }
+
+  &:active {
+    background-color: $base_primary;
+  }
+}
+
+.pagination__button--current {
+  background-color: $base_primary;
+}
