@@ -13,12 +13,12 @@
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
-    grid-row: 2/3;
   }
 
   @media (min-width: $desktop-width) {
     width: 600px;
     height: 600px;
+    grid-column: 1/2;
   }
 }
 
@@ -72,10 +72,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .slide__picture{
+    grid-row: 2/3;
+  }
+
   .slide__description {
     grid-row: 1/2;
-    padding-left: 80px;
-    padding-right: 80px;
   }
 
   .slide__title {
@@ -99,5 +101,17 @@
   .slide__button {
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slide__picture{
+    grid-column: 1/2;
+  }
+
+  .slide__description {
+    grid-column: 2/3;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

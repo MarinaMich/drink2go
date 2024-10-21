@@ -29,7 +29,7 @@
   border: none;
   font-size: 18px;
   cursor: pointer;
-  padding: 10px;
+  padding: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -97,4 +97,20 @@
 
 .slider__pagination {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__control {
+    width: 80px;
+    height: 640px;
+    top: 320px;
+  }
+
+  .slider__control--prev::before {
+    left: 32px;
+  }
+
+  .slider__control--next::after {
+    right: 32px;
+  }
 }
