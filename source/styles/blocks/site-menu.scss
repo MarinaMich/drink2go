@@ -41,10 +41,13 @@
     border: none;
 
     &:first-child {
-      border: none;
+      border-top: none;
+    }
+
+    &--current {
+      border-bottom: 2px solid $base_primary;
     }
   }
-
 }
 
 @media (min-width: $desktop-width){

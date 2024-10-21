@@ -30,19 +30,19 @@ prevButton.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + count) % count;
   } else {
     prevButton.disabled = true;
+    nextButton.disabled = false;
   }
   slide();
-  prevButton.disabled = false;
 });
 
 nextButton.addEventListener('click', () => {
   if (currentIndex < count - 1) {
     currentIndex = (currentIndex + 1) % count;
-} else {
-  nextButton.disabled = true;
-}
+  } else {
+    nextButton.disabled = true;
+    prevButton.disabled = false;
+  }
   slide();
-  nextButton.disabled = false;
 });
 
 window.addEventListener('load', () => {
