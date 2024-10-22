@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding-top: 55px;
+    padding-top: 56px;
     padding-bottom: 0;
   }
 
@@ -108,7 +108,7 @@
   .slider__control {
     width: 80px;
     height: 714px;
-    top: 320px;
+    top: -472px;
   }
 
   .slider__control--prev::before {
@@ -119,6 +119,11 @@
   .slider__control--next::after {
     right: 34px;
     top: 310px;
+  }
+
+  .slider__pagination {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
