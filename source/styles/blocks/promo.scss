@@ -3,11 +3,7 @@
   text-align: center;
   background-color: $flat_white;
 
-  @media (min-width: $tablet-width) and (max-width: 1439px){
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
     background: linear-gradient(to bottom, $flat_white 640px, transparent 50%);
   }
-
-
 }
-
-

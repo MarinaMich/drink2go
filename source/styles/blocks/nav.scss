@@ -4,6 +4,7 @@
   width: auto;
   min-height: 57px;
 }
+
 .nav__user {
   @include list-reset;
   grid-column: 1/2;
@@ -15,7 +16,7 @@
   grid-row: 1/2;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .nav {
     display: flex;
     column-gap: 60px;
@@ -24,7 +25,8 @@
     margin-right: 20px;
   }
 }
-@media (min-width: $desktop-width){
+
+@media (min-width: $desktop-width) {
   .nav {
     column-gap: 160px;
   }

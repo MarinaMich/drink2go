@@ -29,10 +29,9 @@
   @include link-edit;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .site-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
   }
 
   .site-menu__item {
@@ -50,7 +49,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .site-menu {
     column-gap: 20px;
   }

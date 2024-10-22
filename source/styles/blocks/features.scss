@@ -51,10 +51,8 @@
   }
 
   .features__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 50px;
+    flex-flow: row wrap;
+    gap: 50px 30px;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -103,8 +101,7 @@
   }
 
   .features__list {
-    column-gap: 30px;
-    row-gap: 0;
+    gap: 0 30px;
     margin: 0;
   }
 

@@ -27,7 +27,7 @@
   display: none;
 }
 
-@media (min-width: $tablet-width){
+@media (min-width: $tablet-width) {
   .user__item {
     min-width: 60px;
     min-height: 80px;
@@ -40,7 +40,7 @@
   }
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
   .user {
     column-gap: 20px;
   }

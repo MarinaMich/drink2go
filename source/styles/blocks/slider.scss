@@ -38,7 +38,7 @@
   height: 100%;
 }
 
-.slider__control--prev{
+.slider__control--prev {
   left: 0;
 
   &::before {
@@ -52,7 +52,7 @@
   }
 
   &:hover {
-    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(90deg, $white 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
@@ -81,7 +81,7 @@
   }
 
   &:hover {
-    background: linear-gradient(-90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(-90deg, $white 0%, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {

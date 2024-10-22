@@ -18,7 +18,7 @@
 
 .menu__toggle {
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   z-index: 2;
   display: block;
@@ -46,11 +46,12 @@
 .menu--closed .menu__toggle:active {
   background-color: $base_secondary;
 }
-.menu--closed .menu__toggle:hover{
+
+.menu--closed .menu__toggle:hover {
   opacity: 0.8;
 }
 
-.menu--opened .menu__toggle{
+.menu--opened .menu__toggle {
   &::before,
   &::after {
     content: "";
