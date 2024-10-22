@@ -1,5 +1,6 @@
 .nav {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 60px));
   position: relative;
   width: auto;
   min-height: 57px;
