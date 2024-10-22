@@ -1,21 +1,21 @@
 .slider {
   width: 320px;
-  height: 656px;
+  height: auto;
   position: relative;
   margin: 0 auto;
-  padding: 20px 0 60px;
+  padding: 20px 0 45px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    height: 828px;
     padding-top: 55px;
     padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    height: 714px;
     padding-top: 30px;
   }
 }
@@ -25,6 +25,10 @@
   transition: transform 0.5s ease-in-out;
 }
 
+.slider__nav {
+  position: relative;
+}
+
 .slider__control {
   background: inherit;
   border: none;
@@ -32,10 +36,10 @@
   cursor: pointer;
   padding: 0;
   position: absolute;
-  top: 50%;
+  top: -284px;
   transform: translateY(-50%);
   width: 20px;
-  height: 100%;
+  height: 656px;
 }
 
 .slider__control--prev {
@@ -103,7 +107,7 @@
 @media (min-width: $tablet-width) {
   .slider__control {
     width: 80px;
-    height: 640px;
+    height: 714px;
     top: 320px;
   }
 
@@ -119,10 +123,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider__nav {
+    height: 5px;
+    margin-bottom: 60px;
+    margin-top: 12px;
+  }
+
   .slider__control {
     width: 80px;
-    height: 100%;
-    top: 357px;
+    top: -289px;
   }
 
   .slider__control--prev::before {
