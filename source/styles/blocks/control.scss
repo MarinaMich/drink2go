@@ -1,0 +1,34 @@
+.control {
+  display: flex;
+}
+
+.control__label {
+  position: relative;
+  padding-left: 34px;
+  width: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: $white;
+    border: 2px solid $base_primary;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+  }
+}
+
+.control__input[type=radio]:checked + .control__label {
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: $base_primary;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+  }
+}

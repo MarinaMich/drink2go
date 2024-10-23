@@ -5,6 +5,9 @@
 }
 
 .catalog__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
   margin: 0;
   margin-bottom: 20px;
 }
@@ -15,6 +18,10 @@
 
 .catalog__form {
   margin-bottom: 36px;
+
+  & fieldset {
+    @include fieldset-edit;
+  }
 }
 
 .catalog__products {
