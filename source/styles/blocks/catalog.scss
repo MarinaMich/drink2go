@@ -1,0 +1,29 @@
+.catalog {
+  padding-top: 50px;
+  background-color: $lightestgrey;
+  text-align: center;
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.catalog__wrapper {
+  text-align: left;
+}
+
+.catalog__form {
+  margin-bottom: 36px;
+}
+
+.catalog__products {
+  text-align: center;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    display: flex;
+    column-gap: 30px;
+  }
+}

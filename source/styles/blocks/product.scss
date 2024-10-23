@@ -1,0 +1,16 @@
+.product {
+  width: 280px;
+  background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    width: 349px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 317px;
+  }
+}
