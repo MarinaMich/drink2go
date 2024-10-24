@@ -32,3 +32,38 @@
     left: 4px;
   }
 }
+
+.control__label {
+  &--toggle {
+    padding-left: 52px;
+
+    &::before {
+      width: 42px;
+      height: 24px;
+      border: none;
+      border-radius: 12px;
+      background-color: $base-grey;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-color: $white;
+      border-radius: 50%;
+      top: 2px;
+      left: 2px;
+    }
+  }
+}
+
+.control__input[type=checkbox]:checked + .control__label--toggle {
+  &::before {
+    background-color: $base_primary;
+  }
+
+  &::after {
+    left: 20px;
+  }
+}
