@@ -1,4 +1,4 @@
-/* Выпадающее меню в мобильной версии*/
+/* Выпадающее меню в мобильной версии */
 let menuMain = document.querySelector('.menu');
 let menuToggle = document.querySelector('.menu__toggle');
 
@@ -13,7 +13,7 @@ menuToggle.addEventListener('click', function () {
   }
 });
 
-/*Слайдер блока promo*/
+/* Слайдер блока promo */
 const slider = document.querySelector('.slider__list');
 const slides = Array.from(slider.querySelectorAll('.slide'));
 const count = slides.length;
@@ -63,4 +63,24 @@ paginationButtons.forEach((button, index) => {
 
 window.addEventListener('load', () => {
   slide();
+});
+
+/* слайдер для выбора значения библиотека noUiSlider */
+
+const sliderRange = document.querySelector('.range__scale');
+
+/* переопределяем классы */
+noUiSlider.cssClasses.horizontal += ' range__horizontal';
+noUiSlider.cssClasses.connect += ' range__connect';
+noUiSlider.cssClasses.handle += ' range__handle';
+noUiSlider.cssClasses.handleLower += ' range__handle-lower';
+
+noUiSlider.create(sliderRange, {
+  start: [0, 900],
+  connect: true,
+    range: {
+      min: 0,
+      max: 1000,
+  }
+
 });
