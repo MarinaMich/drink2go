@@ -5,4 +5,9 @@
   border-radius: 4px;
   background-color: $base_primary;
   color: $white;
+
+  &--light {
+    background-color: $white;
+    color: $base_primary;
+  }
 }
