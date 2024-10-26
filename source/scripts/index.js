@@ -1,9 +1,8 @@
 /* Выпадающее меню в мобильной версии */
-let menuMain = document.querySelector('.menu');
-let menuToggle = document.querySelector('.menu__toggle');
+const menuMain = document.querySelector('.menu');
+const menuToggle = document.querySelector('.menu__toggle');
 
-menuToggle.addEventListener('click', function () {
-  console.log("клик");
+menuToggle.addEventListener('click', () => {
   if (menuMain.classList.contains('menu--closed')) {
     menuMain.classList.remove('menu--closed');
     menuMain.classList.add('menu--opened');
@@ -24,12 +23,12 @@ let currentIndex = 0;
 
 const slide = () => {
   slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
+};
 
 const thisSlide = (index) => {
-  paginationButtons.forEach(item => item.classList.remove('pagination__button--current'));
+  paginationButtons.forEach((item) => item.classList.remove('pagination__button--current'));
   paginationButtons[index].classList.add('pagination__button--current');
-}
+};
 
 prevButton.addEventListener('click', () => {
   if (currentIndex > 0){
@@ -58,7 +57,7 @@ paginationButtons.forEach((button, index) => {
     currentIndex = index;
     slide();
     thisSlide(currentIndex);
-  })
+  });
 });
 
 window.addEventListener('load', () => {
