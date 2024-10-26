@@ -9,6 +9,7 @@
   font-weight: 600;
   line-height: 24px;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .form__filter-list {
@@ -18,6 +19,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  margin-top: -10px;
 }
 
 .form__wrap-button {
