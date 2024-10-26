@@ -68,6 +68,9 @@ window.addEventListener('load', () => {
 /* слайдер для выбора значения библиотека noUiSlider */
 
 const sliderRange = document.querySelector('.range__scale');
+const inputMin = document.getElementById('min-input');
+const inputMax = document.getElementById('max-input');
+const inputs = [inputMin, inputMax];
 
 /* переопределяем классы */
 noUiSlider.cssClasses.horizontal += ' range__horizontal';
@@ -81,6 +84,24 @@ noUiSlider.create(sliderRange, {
   range: {
     min: 0,
     max: 1000,
+  },
+  step: 1,
+  format: {
+    to:function (value) {
+      return value.toFixed(0);
+    },
+    from: function (value) {
+      return parseFloat(value);
+    },
   }
+});
 
+sliderRange.noUiSlider.on('update', (values, handle) => {
+  inputs[handle].value = values[handle];
+});
+
+inputs.forEach((input, handle) => {
+  input.addEventListener('change', function () {
+    sliderRange.noUiSlider.setHandle(handle, this.value);
+  });
 });
