@@ -96,7 +96,11 @@ noUiSlider.create(sliderRange, {
 });
 
 sliderRange.noUiSlider.on('update', (values, handle) => {
-  inputs[handle].value = values[handle];
+  if (values[handle] === '0') {
+    inputs[handle].value = null;
+  } else {
+    inputs[handle].value = values[handle];
+  }
 });
 
 inputs.forEach((input, handle) => {
