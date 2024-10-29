@@ -23,11 +23,31 @@
   top: -11px;
 
   &::before {
-    content: none;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $white;
+    top: 2px;
+    left: 2px;
   }
 
   &::after {
     content: none;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: $base_primary;
+      opacity: 0.25;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $base_primary;
+    }
   }
 }
 
@@ -46,4 +66,37 @@
   height: 40px;
   border: 2px solid $primary-lighter;
   border-radius: 4px;
+
+  &:focus {
+    border: 2px solid $base-colors;
+  }
+}
+
+.range__dash {
+  width: 8px;
+  height: 2px;
+  background-color: $base-grey;
+  margin-top: 19px;
+}
+
+.range__inputs {
+  *:disabled {
+    border: 2px solid $light-grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .range__input {
+    width: 87px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range__dash {
+    width: 10px;
+  }
+
+  .range__input {
+    width: 134px;
+  }
 }

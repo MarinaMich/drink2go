@@ -32,3 +32,30 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px 30px;
+  }
+
+  .form__wrap-button {
+    flex-direction: row;
+    column-gap: 20px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+
+  .form__button {
+    width: 137px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+  }
+}

@@ -28,6 +28,12 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .catalog__form {
+    margin-bottom: 44px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .catalog__wrapper {
     display: flex;

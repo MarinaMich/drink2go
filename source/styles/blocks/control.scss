@@ -13,7 +13,7 @@
     width: 24px;
     height: 24px;
     background-color: $white;
-    border: 2px solid $base_primary;
+    border: 2px solid $base-grey;
     border-radius: 50%;
     left: 0;
     top: 0;
@@ -21,6 +21,10 @@
 }
 
 .control__input[type=radio]:checked + .control__label {
+  &::before {
+    border: 2px solid $primary-lighter;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -32,6 +36,59 @@
     left: 4px;
   }
 }
+
+.control__input[type=radio]:not(:disabled):not(:checked):hover + .control__label,
+.control__input[type=radio]:not(:disabled):not(:checked):focus + .control__label {
+  &::before {
+    border: 2px solid $primary-lighter;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: $base_primary;
+    opacity: 0.25;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+  }
+}
+
+.control__input[type=radio]:disabled + .control__label {
+  color: $base-grey;
+
+  &::before {
+    border: 2px solid $light-grey;
+    background-color: $white;
+  }
+
+  &::after {
+    content: none;
+  }
+}
+
+.control__input[type=radio]:disabled:checked + .control__label {
+    color: $base-grey;
+
+    &::before {
+      border: 2px solid $light-grey;
+      background-color: $white;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 16px;
+      height: 16px;
+      background-color: $light-grey;
+      border-radius: 50%;
+      top: 4px;
+      left: 4px;
+    }
+  }
+
 
 .control__label {
   &--toggle {
@@ -65,5 +122,37 @@
 
   &::after {
     left: 20px;
+  }
+}
+
+.control__input[type=checkbox]:not(:disabled):not(:checked):hover + .control__label--toggle,
+.control__input[type=checkbox]:not(:disabled):not(:checked):focus + .control__label--toggle {
+  &::before {
+    border: 2px solid $primary-lighter;
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+}
+
+.control__input[type=checkbox]:disabled + .control__label--toggle {
+  color: $base-grey;
+
+  &::before {
+    background-color: $light-grey;
+  }
+
+  &::after {
+    background-color: #f8f8f8;
+  }
+}
+
+.control__input[type=checkbox]:disabled:checked + .control__label--toggle {
+  color: $base-grey;
+
+  &::before {
+    background-color: $light-grey;
+  }
+
+  &::after {
+    background-color: $base-grey;
   }
 }
