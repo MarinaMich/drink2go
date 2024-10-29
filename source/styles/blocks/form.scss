@@ -50,12 +50,23 @@
   }
 
   .form__button {
-    width: 137px;
+    max-width: 137px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
     display: flex;
+    min-width: 318px;
+    row-gap: 30px;
+  }
+
+  .form__wrap-button {
+    margin-top: 10px;
+  }
+
+  .form__button {
+    max-width: none;
+    width: 149px;
   }
 }

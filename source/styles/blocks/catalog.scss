@@ -29,12 +29,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 78px;
+  }
+
+  .catalog__title {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+  }
+
   .catalog__form {
     margin-bottom: 44px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    padding-top: 98px;
+  }
+
+  .catalog__title {
+    margin-bottom: 40px;
+  }
+
   .catalog__wrapper {
     display: flex;
     column-gap: 30px;
