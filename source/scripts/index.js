@@ -108,3 +108,13 @@ inputs.forEach((input, handle) => {
     sliderRange.noUiSlider.setHandle(handle, this.value);
   });
 });
+
+/* Переключает стрелку у сортировки */
+const sort = document.querySelector('.sort');
+document.querySelector('.sort__list').addEventListener('click', () => {
+  if(sort.classList.contains('sort--rotation')) {
+    sort.classList.remove('sort--rotation');
+  } else {
+    sort.classList.add('sort--rotation');
+  }
+});

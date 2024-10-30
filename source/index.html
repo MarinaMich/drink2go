@@ -302,11 +302,14 @@
             </div>
           </form>
           <div class="catalog__products products">
-            <select class="products__sorting" name="sort" aria-label="Сортировка">
-              <option value="default">по умолчанию</option>
-              <option value="cheap">сначала дешёвое</option>
-              <option value="expensive">сначала дорогое</option>
-            </select>
+            <div class="products__sorting sort">
+              <label class="sort__title" for="sort-select">Сортировка:</label>
+              <select class="sort__list" id="sort-select" name="sort" aria-label="Сортировка">
+                <option value="default">по умолчанию</option>
+                <option value="cheap">сначала дешёвое</option>
+                <option value="expensive">сначала дорогое</option>
+              </select>
+            </div>
             <ul class="products__list main-catalog">
               <li class="main-catalog__item product">
                 <a class="product__link" href="#">

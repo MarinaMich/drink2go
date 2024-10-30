@@ -1,0 +1,54 @@
+.sort {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  position: relative;
+  width: 280px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 6px;
+    background-image: url("../../icons/arrow-sort.svg");
+    z-index: 5;
+    right: 12px;
+    top: 10px;
+  }
+}
+
+.sort__title {
+  text-align: left;
+}
+
+.sort__list {
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: $base_primary;
+  background-color: inherit;
+  width: 165px;
+  border-radius: 4px;
+  padding: 0 10px;
+  appearance: none;
+
+  &:hover,
+  &:focus {
+    background-color: $base_secondary;
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+.sort--rotation {
+  &::after {
+    transform: scaleY(-1);
+  }
+}
