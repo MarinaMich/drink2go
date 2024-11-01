@@ -120,3 +120,18 @@ document.querySelector('.sort__list').addEventListener('click', () => {
 });
 
 /* Пагинация у каталога */
+const paginationList = document.querySelector('.pagination-catalog__list');
+const paginationItems = Array.from(paginationList.querySelectorAll('.pagination-catalog__item'));
+const items = paginationItems.length;
+const buttonPrev = document.querySelector('.pagination-catalog__button--prev');
+const buttonNext = document.querySelector('.pagination-catalog__button--next');
+const tabletWidthMediaQuery = window.matchMedia('(min-width: 768px)');
+
+if (tabletWidthMediaQuery.matches) {
+  if (paginationItems[0].classList.contains('pagination-catalog__item--current')) {
+    buttonPrev.style.visibility = 'hidden';
+  }
+  if (paginationItems[items - 1].classList.contains('pagination-catalog__item--current')) {
+    buttonNext.style.visibility = 'hidden';
+  }
+}
