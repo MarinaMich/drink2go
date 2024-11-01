@@ -410,15 +410,21 @@
             </ul>
             <div class="products__pagination pagination-catalog">
               <button class="pagination-catalog__button" type="button">
-                <span class="visually-hidden">Назад</span>
+                <svg class="pagination-catalog__icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z" fill="currentColor"/>
+                </svg>
+                <span class="pagination-catalog__text">Назад</span>
               </button>
               <ol class="pagination-catalog__list">
                 <li class="pagination-catalog__item">1</li>
-                <li class="pagination-catalog__item">2</li>
+                <li class="pagination-catalog__item pagination-catalog__item--current">2</li>
                 <li class="pagination-catalog__item">3</li>
               </ol>
-              <button class="pagination-catalog__button" type="button">
-                <span class="visually-hidden">Вперед</span>
+              <button class="pagination-catalog__button pagination-catalog__button--next" type="button">
+                <svg class="pagination-catalog__icon pagination-catalog__icon--next" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z" fill="currentColor"/>
+                </svg>
+                <span class="pagination-catalog__text">Вперед</span>
               </button>
             </div>
           </div>

@@ -118,3 +118,5 @@ document.querySelector('.sort__list').addEventListener('click', () => {
     sort.classList.add('sort--rotation');
   }
 });
+
+/* Пагинация у каталога */

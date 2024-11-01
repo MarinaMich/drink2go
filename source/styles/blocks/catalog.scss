@@ -26,6 +26,7 @@
 
 .catalog__products {
   text-align: center;
+  padding-bottom: 44px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,6 +43,10 @@
 
   .catalog__form {
     margin-bottom: 44px;
+  }
+
+  .catalog__products {
+    padding-bottom: 90px;
   }
 }
 
