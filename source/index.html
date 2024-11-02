@@ -440,7 +440,14 @@
         <h2 class="visually-hidden">Адрес на карте</h2>
         <div class="contact-map__wrapper">
           <picture>
-            <img src="images/map/map_bg_mob@1x.png" width="320" height="420" alt="Адрес Drink2Go на карте.">
+            <!-- WebP -->
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images\map\map_bg_desk@1x.webp 1x, images\map\map_bg_desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images\map\map_bg_tab@1x.webp 1x, images\map\map_bg_tab@2x.webp 2x">
+            <source type="image/webp" srcset="images\map\map_bg_mob@1x.webp 1x, images\map\map_bg_mob@2x.webp 2x">
+            <!-- PNG -->
+            <source media="(min-width: 1440px)" srcset="images\map\map_bg_desk@1x.png 1x, images\map\map_bg_desk@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="images\map\map_bg_tab@1x.png 1x, images\map\map_bg_tab@2x.png 2x">
+            <img src="images/map/map_bg_mob@1x.png" srcset="images\map\map_bg_mob@2x.png" width="320" height="420" alt="Адрес Drink2Go на карте.">
           </picture>
         </div>
       </section>
