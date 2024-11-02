@@ -36,6 +36,30 @@
   border: none;
   border-radius: 4px;
 
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+
+    .pagination-catalog__icon {
+      color: $white;
+    }
+  }
+
+  &:active {
+    background-color: $base-colors;
+
+    .pagination-catalog__icon {
+      color: $white;
+    }
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+
+    .pagination-catalog__icon {
+      color: $white;
+    }
+  }
 }
 
 .pagination-catalog__icon {
@@ -57,6 +81,18 @@
 
   .pagination-catalog__button {
     min-width: 90px;
+
+    &:hover,
+    &:focus,
+    &:active + .pagination-catalog__text {
+      color: $white;
+    }
+
+    &:disabled {
+      .pagination-catalog__text {
+        color: $white;
+      }
+    }
   }
 
   .pagination-catalog__icon {
