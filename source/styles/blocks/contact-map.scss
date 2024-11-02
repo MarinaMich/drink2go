@@ -1,5 +1,16 @@
 .contact-map {
   padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../icons/map-pin.svg");
+    position: absolute;
+    width: 38px;
+    height: 50px;
+    top: 43%;
+    left: 50%;
+  }
 }
 
 .contact-map img {
