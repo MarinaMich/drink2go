@@ -19,12 +19,34 @@
   background-color: $white;
   padding: 8px;
 
+  & a {
+    @include link-edit;
+    display: inline-block;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $base-colors;
+    color: $white;
+  }
+
   &--current {
     background: none;
     color: $black;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
+  }
+
+  &--disabled {
+    background-color: $light-grey;
+    color: $white;
   }
 }
 
