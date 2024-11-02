@@ -1,0 +1,32 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.social__item {
+  width: 40px;
+  height: 40px;
+}
+
+.social__link {
+  @include link-edit;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  color: $base-grey;
+
+  &:hover,
+  &:focus {
+    color: #7859cf;
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    color: #7859cf;
+    background-color: rgba(120, 89, 207, 0.25);
+    ;
+  }
+}

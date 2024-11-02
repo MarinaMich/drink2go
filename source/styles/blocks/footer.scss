@@ -1,0 +1,13 @@
+.footer__wrapper {
+  padding-top: 22px;
+}
+
+.footer__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__social {
+  @include list-reset;
+}

@@ -474,25 +474,33 @@
       <div class="footer__wrapper container">
         <div class="footer__icons">
           <a class="footer__logo" href="index.html">
-            <svg width="82" height="36"></svg>
-            <span class="visually-hidden">Логотип бренда.</span>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" width="170" height="36" srcset="images/logo_max.svg">
+              <img src="images/logo_mid.svg" width="82" height="36" alt="Логотип Drink2Go.">
+            </picture>
           </a>
           <ul class="footer__social social">
             <li class="social__item">
-              <a href="https://vk.com/htmlacademy">
-                <svg width="20" height="20"></svg>
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg width="20" height="20">
+                  <use href="icons/stack.svg#vk"></use>
+                </svg>
                 <span class="visually-hidden">Мы в контакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="https://pinterest.com/htmlacademy">
-                <svg width="20" height="20"></svg>
+              <a class="social__link" href="https://pinterest.com/htmlacademy">
+                <svg width="20" height="20">
+                  <use href="icons/stack.svg#pinterest"></use>
+                </svg>
                 <span class="visually-hidden">Мы в Pinterest</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="https://ok.ru/htmlacademy">
-                <svg width="20" height="20"></svg>
+              <a class="social__link" href="https://ok.ru/htmlacademy">
+                <svg width="20" height="20">
+                  <use href="icons/stack.svg#ok"></use>
+                </svg>
                 <span class="visually-hidden">Мы в ОК</span>
               </a>
             </li>
