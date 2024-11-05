@@ -1,6 +1,7 @@
 .user {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .user__link {

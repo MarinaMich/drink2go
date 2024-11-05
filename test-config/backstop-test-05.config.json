@@ -61,15 +61,39 @@
       "misMatchThreshold": 5
     },
     {
-      "label": "index features TEST-05. Шрифты.",
+      "label": "index catalog TEST-05. Шрифты.",
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./reference/index.html",
       "selectors": [],
       "content": [
-        "Преимущества",
-        "Главные причины",
-        "Скорость",
-        "Готовый напиток всегда"
+        "Каталог кофейных напитков",
+        "Цена",
+        "Наличие молока",
+        "Неважно",
+        "Страна произрастания",
+        "Бразилия",
+        "Эфиопия",
+        "Перу",
+        "Применить",
+        "Сбросить",
+        "Сортировка",
+        "Кофе без кофеина из Эфиопии",
+        "В корзину"
+      ],
+      "onReadyScript": "textStylesOnly.js",
+      "misMatchThreshold": 5
+    },
+    {
+      "label": "index footer TEST-05. Шрифты.",
+      "url": "http://localhost:3000/index.html",
+      "referenceUrl": "./reference/index.html",
+      "selectors": [],
+      "content": [
+        "Способы оплаты",
+        "Медиа",
+        "Санкт-Петербург",
+        "Разработано",
+        "HTML Academy"
       ],
       "onReadyScript": "textStylesOnly.js",
       "misMatchThreshold": 5
