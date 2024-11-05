@@ -24,3 +24,10 @@
     left: 49%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contact-map::after {
+    top: 45%;
+    left: 50%;
+  }
+}
