@@ -74,6 +74,15 @@
   @include link-edit;
   display: block;
   padding: 8px 0;
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $base-colors;
+  }
 }
 
 .footer__contacts address {
@@ -106,6 +115,15 @@
     height: 16px;
     left: 0;
   }
+
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $base-colors;
+  }
 }
 
 .footer__copy {
@@ -128,6 +146,23 @@
   display: flex;
   column-gap: 2px;
   color: $base-grey;
+
+  &:hover,
+  &:focus {
+    color: $base_primary;
+
+    p {
+      color: $base_primary;
+    }
+  }
+
+  &:active {
+    color: $base-colors;
+
+    p {
+      color: $base-colors;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
