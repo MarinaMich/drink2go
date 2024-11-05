@@ -67,7 +67,8 @@
   }
 
   .product__image {
-    margin-bottom: 30px;
+    display: block;
+    margin: 0 auto 30px;
   }
 
   .product__title {
@@ -78,6 +79,10 @@
 
   .product__text {
     margin-bottom: 20px;
+  }
+
+  .product__price {
+    margin-top: 4px;
   }
 }
 
