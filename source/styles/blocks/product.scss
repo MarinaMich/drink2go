@@ -6,10 +6,11 @@
 
 .product__link {
   @include link-edit;
+  display: block;
 }
 
 .product__image {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .product__title {
