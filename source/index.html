@@ -73,7 +73,7 @@
         <div class="promo__slider slider">
           <div class="slider__list">
             <div class="slider__item slide">
-              <picture class="slide__picture">
+              <picture>
                 <!-- WebP -->
                 <source type="image/webp" width="600" height="600" media="(min-width: 1440px)" srcset="images/slider/flat_white_desk@1x.webp 1x, images/slider/flat_white_desk@2x.webp 2x">
                 <source type="image/webp" width="476" height="476" media="(min-width: 768px)" srcset="images/slider/flat_white_tab@1x.webp 1x, images/slider/flat_white_tab@2x.webp 2x">
@@ -81,7 +81,7 @@
                 <!-- PNG -->
                 <source type="image/png" media="(min-width: 1440px)" width="600" height="600" srcset="images/slider/flat_white_desk@1x.png 1x, images/slider/flat_white_desk@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="476" height="476" srcset="images/slider/flat_white_tab@1x.png 1x, images/slider/flat_white_tab@2x.png 2x">
-                <img class="slide__img" src="images/slider/flat_white_mob@1x.png" srcset="images/slider/flat_white_mob@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
+                <img src="images/slider/flat_white_mob@1x.png" srcset="images/slider/flat_white_mob@2x.png 2x" width="280" height="280" alt="Декаф Флэт Уайт.">
               </picture>
               <div class="slide__description ">
                 <span class="slide__badge badge">Новинка!</span>
@@ -98,7 +98,7 @@
               </div>
             </div>
             <div class="slider__item slide">
-              <picture class="slide__picture">
+              <picture>
                 <!-- WebP -->
                 <source type="image/webp" width="600" height="600" media="(min-width: 1440px)" srcset="images/slider/lavender_desk@1x.webp 1x, images/slider/lavender_desk@2x.webp 2x">
                 <source type="image/webp" width="476" height="476" media="(min-width: 768px)" srcset="images/slider/lavender_tab@1x.webp 1x, images/slider/lavender_tab@2x.webp 2x">
@@ -106,7 +106,7 @@
                 <!-- PNG -->
                 <source type="image/png" media="(min-width: 1440px)" width="600" height="600" srcset="images/slider/lavender_desk@1x.png 1x, images/slider/lavender_desk@2x.png 2x">
                 <source type="image/png" media="(min-width: 768px)" width="476" height="476" srcset="images/slider/lavender_tab@1x.png 1x, images/slider/lavender_tab@2x.png 2x">
-                <img class="slide__img" src="images/slider/lavender_mob@1x.png" srcset="images/slider/lavender_mob@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
+                <img src="images/slider/lavender_mob@1x.png" srcset="images/slider/lavender_mob@2x.png 2x" width="280" height="280" alt="Лавандовый Латте.">
               </picture>
               <div class="slide__description ">
                 <span class="slide__badge badge">Новинка!</span>
@@ -121,7 +121,7 @@
               </div>
             </div>
             <div class="slider__item slide">
-              <picture class="slide__picture">
+              <picture>
                 <!-- WebP -->
                 <source type="image/webp" width="600" height="600" media="(min-width: 1440px)" srcset="images/slider/espresso_desk@1x.webp 1x, images/slider/espresso_desk@2x.webp 2x">
                 <source type="image/webp" width="476" height="476" media="(min-width: 768px)" srcset="images/slider/espresso_tab@1x.webp 1x, images/slider/espresso_tab@2x.webp 2x">
@@ -129,7 +129,7 @@
                 <!-- PNG -->
                 <source type="image/png" width="600" height="600" media="(min-width: 1440px)" srcset="images/slider/espresso_desk@1x.png 1x, images/slider/espresso_desk@2x.png 2x">
                 <source type="image/png" width="476" height="476" media="(min-width: 768px)" srcset="images/slider/espresso_tab@1x.png 1x, images/slider/espresso_tab@2x.png 2x">
-                <img class="slide__img" src="images/slider/espresso_mob@1x.png" srcset="images/slider/espresso_mob@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо.">
+                <img src="images/slider/espresso_mob@1x.png" srcset="images/slider/espresso_mob@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо.">
               </picture>
               <div class="slide__description ">
                 <span class="slide__badge badge">Новинка!</span>
@@ -176,35 +176,43 @@
         <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
         <ul class="features__list">
           <li class="features__item">
-            <svg class="features__icon" width="56" height="56">
-              <use href="icons/stack.svg#speed"></use>
-            </svg>
-            <span class="visually-hidden">Секундомер.</span>
+            <div class="features__icon">
+              <svg width="56" height="56">
+                <use href="icons/stack.svg#speed"></use>
+              </svg>
+              <span class="visually-hidden">Секундомер.</span>
+            </div>
             <h3 class="features__name">Скорость</h3>
             <p class="features__text">Готовый напиток всегда под рукой&nbsp;— просто открой банку</p>
           </li>
           <li class="features__item">
-            <svg class="features__icon" width="56" height="56">
-              <use href="icons/stack.svg#fit"></use>
-            </svg>
-            <span class="visually-hidden">Карман.</span>
+            <div class="features__icon">
+              <svg width="56" height="56">
+                <use href="icons/stack.svg#fit"></use>
+              </svg>
+              <span class="visually-hidden">Карман.</span>
+            </div>
             <h3 class="features__name">Удобство</h3>
             <p class="features__text">Легко помещается и в карман,
               и&nbsp;в&nbsp;маленькую сумочку</p>
           </li>
           <li class="features__item">
-            <svg class="features__icon" width="56" height="56">
-              <use href="icons/stack.svg#energy"></use>
-            </svg>
-            <span class="visually-hidden">Знак молнии.</span>
+            <div class="features__icon">
+              <svg width="56" height="56">
+                <use href="icons/stack.svg#energy"></use>
+              </svg>
+              <span class="visually-hidden">Знак молнии.</span>
+            </div>
             <h3 class="features__name">Бодрость</h3>
             <p class="features__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
           <li class="features__item">
-            <svg class="features__icon" width="56" height="56">
-              <use href="icons/stack.svg#ecology"></use>
-            </svg>
-            <span class="visually-hidden">Лист дерева.</span>
+            <div class="features__icon">
+              <svg width="56" height="56">
+                <use href="icons/stack.svg#ecology"></use>
+              </svg>
+              <span class="visually-hidden">Лист дерева.</span>
+            </div>
             <h3 class="features__name">Экологичность</h3>
             <p class="features__text">Вся упаковка сделана
               из&nbsp;перерабатываемых материалов</p>
@@ -317,7 +325,7 @@
                     <!-- WebP -->
                     <source type="image/webp" width="130" height="188" srcset="images/catalog/coffee-can-1@1x.webp 1x, images/catalog/coffee-can-1@2x.webp 2x">
                     <!-- PNG -->
-                    <img class="product__image" src="images/catalog/coffee-can-1@1x.png" srcset="images/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                    <img src="images/catalog/coffee-can-1@1x.png" srcset="images/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
                   </picture>
                 </a>
                 <a class="product__link" href="#">
@@ -336,7 +344,7 @@
                     <!-- WebP -->
                     <source type="image/webp" width="130" height="188" srcset="images/catalog/coffee-can-2@1x.webp 1x, images/catalog/coffee-can-2@2x.webp 2x">
                     <!-- PNG -->
-                    <img class="product__image" src="images/catalog/coffee-can-2@1x.png" srcset="images/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                    <img src="images/catalog/coffee-can-2@1x.png" srcset="images/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
                   </picture>
                 </a>
                 <a class="product__link" href="#">
@@ -355,7 +363,7 @@
                     <!-- WebP -->
                     <source type="image/webp" width="130" height="188" srcset="images/catalog/coffee-can-3@1x.webp 1x, images/catalog/coffee-can-3@2x.webp 2x">
                     <!-- PNG -->
-                    <img class="product__image" src="images/catalog/coffee-can-3@1x.png" srcset="images/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                    <img src="images/catalog/coffee-can-3@1x.png" srcset="images/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
                   </picture>
                 </a>
                 <a class="product__link" href="#">
@@ -374,7 +382,7 @@
                     <!-- WebP -->
                     <source type="image/webp" width="130" height="188" srcset="images/catalog/coffee-can-4@1x.webp 1x, images/catalog/coffee-can-4@2x.webp 2x">
                     <!-- PNG -->
-                    <img class="product__image" src="images/catalog/coffee-can-4@1x.png" srcset="images/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                    <img src="images/catalog/coffee-can-4@1x.png" srcset="images/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
                   </picture>
                 </a>
                 <a class="product__link" href="#">
@@ -393,7 +401,7 @@
                     <!-- WebP -->
                     <source type="image/webp" width="130" height="188" srcset="images/catalog/coffee-can-5@1x.webp 1x, images/catalog/coffee-can-5@2x.webp 2x">
                     <!-- PNG -->
-                    <img class="product__image" src="images/catalog/coffee-can-5@1x.png" srcset="images/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                    <img src="images/catalog/coffee-can-5@1x.png" srcset="images/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
                   </picture>
                 </a>
                 <a class="product__link" href="#">
@@ -412,7 +420,7 @@
                     <!-- WebP -->
                     <source type="image/webp" width="130" height="188" srcset="images/catalog/coffee-can-6@1x.webp 1x, images/catalog/coffee-can-6@2x.webp 2x">
                     <!-- PNG -->
-                    <img class="product__image" src="images/catalog/coffee-can-6@1x.png" srcset="images/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
+                    <img src="images/catalog/coffee-can-6@1x.png" srcset="images/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт.">
                   </picture>
                 </a>
                 <a class="product__link" href="#">
@@ -428,7 +436,7 @@
             </ul>
             <div class="products__pagination pagination-catalog">
               <button class="pagination-catalog__button pagination-catalog__button--prev" type="button">
-                <svg class="pagination-catalog__icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z" fill="currentColor"/>
                 </svg>
                 <span class="pagination-catalog__text">Назад</span>
@@ -445,7 +453,7 @@
                 </li>
               </ol>
               <button class="pagination-catalog__button pagination-catalog__button--next" type="button">
-                <svg class="pagination-catalog__icon pagination-catalog__icon--next" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z" fill="currentColor"/>
                 </svg>
                 <span class="pagination-catalog__text">Вперёд</span>

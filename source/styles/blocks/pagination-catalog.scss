@@ -63,35 +63,26 @@
   &:hover,
   &:focus {
     background-color: $primary-lighter;
-
-    .pagination-catalog__icon {
-      color: $white;
-    }
+    color: $white;
   }
 
   &:active {
     background-color: $base-colors;
-
-    .pagination-catalog__icon {
-      color: $white;
-    }
+    color: $white;
   }
 
   &:disabled {
     background-color: $light-grey;
-
-    .pagination-catalog__icon {
-      color: $white;
-    }
+    color: $white;
   }
 }
 
-.pagination-catalog__icon {
+.pagination-catalog__button svg {
   transform: rotate(90deg);
+}
 
-  &--next {
-    transform: rotate(-90deg);
-  }
+.pagination-catalog__button--next svg {
+  transform: rotate(-90deg);
 }
 
 .pagination-catalog__text {
